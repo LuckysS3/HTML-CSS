@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gruping tags</title>
+        <style>
+            body{
+                background-color: rgb(133, 133, 133);
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 5px;
+            }
+
+            header{
+                background-color: lightcyan;
+                text-align: center;
+                padding: 2px;
+                border-radius: 10px;
+            }
+
+            nav{
+                background-color: rgba(37, 37, 37, 0.527);
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 3px 2px 4px 1px rgba(0, 0, 0, 0.384);
+            }
+
+            nav > a{
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                margin-right: 30px;
+                border-radius: 10px;
+            }
+
+            nav > a:hover{
+                text-decoration: underline;
+            }
+
+            .assunto{
+                background-color: lightblue;
+                border-radius: 12px;
+                margin-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 5px;
+            }
+
+            .assuntos{
+                background-color: aquamarine;
+                border-radius: 12px;
+                margin-top: 10px;
+                padding-left: 5px;
+            }
+
+            #noticia > h2{
+                padding: 10px;
+                margin: 0px;
+            }
+
+            #brasil > h2{
+                padding: 10px;
+                margin: 0px;
+            }
+            aside{
+                text-align: center;
+                color: red;
+            }
+            abbr{
+                text-decoration: none;
+            }
+
+            footer{
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Meu site</h1>
+            <nav>
+                <a href="#">aaa</a>
+                <a href="#">ssss</a>
+                <a href="#">dddd</a>
+                <a href="#">wwww</a>
+            </nav>
+        </header>
+        <main>
+            <section class="assunto">
+                <article id="brasil">
+                    <h2>E isto que ta no Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, ex odit! Unde iusto iste consequatur necessitatibus obcaecati, aut natus soluta. Ab culpa dolor, nobis illo quis non illum provident deleniti!</p>
+                </article>
+            </section>
+            <section class="assuntos">
+                <article id="noticia">
+                    <h2>Noticia sobre o brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos voluptatibus recusandae aspernatur, accusantium deleniti sequi eius impedit ullam nihil at voluptatum facilis repudiandae a cupiditate cumque et minus vitae!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus nostrum quisquam illo, voluptate aut praesentium, natus facere quo maiores aperiam ullam mollitia numquam eligendi doloribus! Eveniet corrupti dolore ea magni.</p>
+                    <aside>
+                        <p><abbr title="Luiz Andre">Artigo feito por me</abbr></p>
+                    </aside>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Desevolvido pelo luiz andre</p>
+        </footer>
+    </body>
+</html>
